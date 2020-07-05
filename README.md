@@ -1,27 +1,25 @@
-# PorterLyman
+# clean-card
+A self help repository to getting your first website up and running. Powered by Angular and Heroku. 
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 9.0.1.
+# Pre-requisites
+Ensure Node, Git, and VSCode (or any other trusted IDE) is installed.
 
-## Development server
+# Clone repo
+1. `git clone https://github.com/pslyman/clean-card.git` into a directory of your choosing. 
+2. In the destination directory, run `npm install`, then `ng serve`. If the app doesn't open automatically, you can probably find it at `localhost://4200` or a similar port.
+3. Now open your destination directory in your IDE (VSCode). You're now ready to customize your app. 
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
+# Customize and build
+1. Open angular.json. Beneath `"projects": {` replace `"CleanCard"` with the your name, or the name of your app. Make sure it's one word. You can hyphenate if needed.  
+2. In server.js, replace CleanCard the same as above. 
+3. Next, navigated to src/index.html. Replace `Clean Card app` with rather your name, or the name of your app. No need to hyphenate or keep as a single word here. This will be the browser tab title. 
+4. Now, go to src/app/app.component.ts. The rest of the work will mostly be in here. 
+5. Scroll down to `title = "Clean Card"` (about line 93 or so) and replace it with the name you chose above. This will be displayed at the top of your page. If you don't want it, you can open app.component.html and remove the <h1> tag to strip it out (lines 1 -3).
+6. Starting a few lines down, you'll notice four sets of data: contact, portfolio, skills, and titles. If you do a find all & replace with your IDE, you can probably rename these if needed. If you explore the app you're running in `localhost://4200`, you'll notice they're represented as four tabs. Following the trend in app.component.ts, replace the demo data with your own. You can add as many as you want, separated by commas. 
+ 
+Note: `tiles` _must_ have incremental `id` with each addition. `big`, `toggled`, and `hide` are required. Leave the latter two as false, and `big` can be true or false depending on if you want that card to be bigger and more prominent. Think if these are your more "notable" experience.
 
-## Code scaffolding
+Note: If you decide you need less than four tabs, you can look through app.component.html and pull out the section you won't need, as well as the <h4> item to match it. 
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+Note: for images in Portfolio, you can stick them in the assets folder and update the links accordingly. 
 
-## Build
-
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory. Use the `--prod` flag for a production build.
-
-## Running unit tests
-
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
-
-## Running end-to-end tests
-
-Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protractortest.org/).
-
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI README](https://github.com/angular/angular-cli/blob/master/README.md).
