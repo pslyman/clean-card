@@ -63,4 +63,8 @@ Note: It'll take "24 to 72 hours to propagate". Although for me it was a couple 
 
 4. Go back to you main section in Heroku, then click the `settings` tab. Scroll down to `Domains` and click `Add domain`. Add enter in your desired website URL, following this format: `www.CleanCards.com`. `www` and `.com` are crucial. Once entered, Heroku will show you a `DNS Target`. Copy it to use later. 
 
-5. Go back to Google Domains, then DNS, then Synthetic Records. Go to Add a Domain
+5. Go back to Google Domains, then DNS, then Synthetic Records. Go to Add a Domain.
+ a. Put `@` as subdomain. Put your `https://www.CleanCards.com` (or whatever your domain is) to the next field. 
+
+
+Google Domains > DNS > Synthetic Records > Add a subdomain: @ to Subdomain, add https://www.[your-domain].com to the next field. Forward the path (so that [your-domain].com/about.html forwards to https://www.[your-domain].com/about.html), and leave the SSL Enabled.
