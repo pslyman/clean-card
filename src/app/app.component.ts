@@ -114,8 +114,8 @@ export class AppComponent implements OnInit, AfterContentInit {
   portfolio = [
     {
       id: 0,
-      title: "Google.com",
-      text: "Yep. I made Google.com. Here it is. Please hire me.",
+      title: "Name of thing I did",
+      text: "Description of that thing I did",
       link: "https://www.google.com",
       source: "",
     },
@@ -141,10 +141,10 @@ export class AppComponent implements OnInit, AfterContentInit {
   tiles = [
     {
       id: 0,
-      title: "Software Engineer",
-      subTitle: "Google (1998 - Current)",
+      title: "Job title",
+      subTitle: "Company Name (1998 - Current)",
       text:
-        "Since I made Google, I've been here a while. Please help me leave. I know these technologies:",
+        "Short description of my role and expections in that job. I used these technologies:",
       list: [
         "Angular",
         "HTML",

@@ -4,12 +4,12 @@ A self help repository to getting your first website up and running. Powered by 
 - Contains styling for mobile devices, tablets, and computer screens. 
 - Has URL hashes so you can share your website with certain tabs or experience tiles already open. 
 - Is minimal, no nonsense, to the point. Just how I like it. 
-- Oooh pretty animations. Just how you like it.
+- Oh and pretty animations. Just how you like it.
 
 # Pre-requisites
 - Ensure Node, Git, and VSCode (or any other trusted IDE) is installed. 
 
-- Create Github and Heroku accounts.
+- Create free Github and Heroku accounts.
 
 # Fork, then clone repo
 1. Fork this directory, then clone that fork with the terminal command: `git clone https://github.com/pslyman/clean-card.git` into a directory of your choosing. 
