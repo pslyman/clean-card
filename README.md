@@ -48,6 +48,8 @@ Note: for images in Portfolio, you can stick them in the assets folder and updat
 
 6. When the build is done, click `Open app` at the top. Note your URL. It should be something like `https://myAppName.herokuapp.com`
 
+7. If you'd like to update/replace your tab icon, swap out `src/favicon.ico` with your desired icon. If you need something simple and quick, take a look at https://favicon.io/favicon-generator/. 
+
 # Host app with Heroku on my own domain (remove `herokuapp.com`)
 ### Note: this will run you about $12 a year. 
 
@@ -59,4 +61,6 @@ Note: It'll take "24 to 72 hours to propagate". Although for me it was a couple 
 
 3. Go to your Heroku account, click your profile avatar, then Account settings. Go to Billing and add a credit card. Unless you get moderate to heavy traffic on your site, you won't be charged. You can keep track of that information on that page.
 
-4. 
+4. Go back to you main section in Heroku, then click the `settings` tab. Scroll down to `Domains` and click `Add domain`. Add enter in your desired website URL, following this format: `www.CleanCards.com`. `www` and `.com` are crucial. Once entered, Heroku will show you a `DNS Target`. Copy it to use later. 
+
+5. Go back to Google Domains, then DNS, then Synthetic Records. Go to Add a Domain
