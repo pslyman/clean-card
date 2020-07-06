@@ -16,6 +16,8 @@ A self help repository to getting your first website up and running. Powered by 
 2. In the destination directory, run `npm install`, then `ng serve`. If the app doesn't open automatically, you can probably find it at the URL `localhost://4200` or a similar port.
 3. Now open your destination directory in your IDE (VSCode). You're now ready to customize your app. 
 
+    If you know how, I'd recommend just creating a new repository, cloning, then pushing privately to your own. 
+
 # Customize and build
 1. Open `angular.json`. Beneath `"projects": {` replace `"CleanCard"` with the your name, or the name of your app. Make sure it's one word. You can hyphenate if needed. Scroll down and replace every other instance.
 2. In `server.js`, replace `CleanCard` with the same as above. 
@@ -24,11 +26,11 @@ A self help repository to getting your first website up and running. Powered by 
 5. Scroll down to `title = "Clean Card"` (about line 93 or so) and replace it with the name you chose above. This will be displayed at the top of your page. If you don't want it, you can open `app.component.html` and remove the `<h1>` tag to strip it out (lines 1 -3), or leave `title` empty. 
 6. Starting a few lines down, you'll notice four sets of data: contact, portfolio, skills, and titles. If you do a find all & replace with your IDE, you can probably rename these if needed. If you explore the app you're running in `localhost://4200`, you'll notice they're represented as four tabs. Following the trend in app.component.ts, replace the demo data with your own. You can add as many as you want, separated by commas. 
  
-Note: `tiles` _must_ have incremental `id` with each addition. `big`, `toggled`, and `hide` are required. Leave the latter two as false, and `big` can be true or false depending on if you want that card to be bigger and more prominent. Think if these are your more "notable" experience.
+    Note: `tiles` _must_ have incremental `id` with each addition. `big`, `toggled`, and `hide` are required. Leave the latter two as false, and `big` can be true or false depending on if you want that card to be bigger and more prominent. Think if these are your more "notable" experience.
 
-Note: If you decide you need less than four tabs, you can look through app.component.html and pull out the section you won't need, as well as the `<h4>` item to match it. 
+    Note: If you decide you need less than four tabs, you can look through app.component.html and pull out the section you won't need, as well as the `<h4>` item to match it. 
 
-Note: for images in Portfolio, you can stick them in the assets folder and update the links accordingly. 
+    Note: for images in Portfolio, you can stick them in the assets folder and update the links accordingly. 
 
 7. Now `git add .` (note the dot), `git commit -m 'initial commit'`, and `git push` to stage, commit, and push your changes to Github. The `initial commit`, if you make more changes in the future should say something different, usually a short description of what changes you made. For example `git commit -m 'added item to portfolio'`.
 
@@ -61,10 +63,89 @@ Note: It'll take "24 to 72 hours to propagate". Although for me it was a couple 
 
 3. Go to your Heroku account, click your profile avatar, then Account settings. Go to Billing and add a credit card. Unless you get moderate to heavy traffic on your site, you won't be charged. You can keep track of that information on that page.
 
-4. Go back to you main section in Heroku, then click the `settings` tab. Scroll down to `Domains` and click `Add domain`. Add enter in your desired website URL, following this format: `www.CleanCards.com`. `www` and `.com` are crucial. Once entered, Heroku will show you a `DNS Target`. Copy it to use later. 
+4. Go back to you main section in Heroku, then click the `settings` tab. Scroll down to `Domains` and click `Add domain`. Add enter in your desired website URL, following this format: `www.myAppName.com`. Note that `www` and `.com` are crucial. Once entered, Heroku will show you a `DNS Target`. Copy it to use later. 
 
 5. Go back to Google Domains, then DNS, then Synthetic Records. Go to Add a Domain.
- a. Put `@` as subdomain. Put your `https://www.CleanCards.com` (or whatever your domain is) to the next field. 
+
+    a. Put `@` as subdomain. 
+
+    b. Put your `https://www.myAppName.com` (or whatever your domain is) to the next field (Destination URL).
+
+    c. Click `Add`. 
+
+6. Scroll down to `Custom Resource Records`.
+
+    a. In the first field enter `www`
+
+    b. From the drop-down, select `CNAME`
+
+    c. Leave `1H` how it is. 
+
+    d. In the last field (`IPv4 address`), enter your `DNS Target` address that you copied from Heroku in step 4.
+
+    e. Click `Add`.
+
+7. Within a few minutes you should be able to go to your URL from step 5:b and see your website wtihout the `herokupp.com` attached. You're done!
+
+# Set up email alias
+
+If you want to be able to email from your website name, like `mail@myWebsite.com`. Google Domains does have an option to purchase the Google Suite which will give you your own email for a fee, _but_ if you want to just use an email alias from your existing email, you totally can. It's free. 
+
+1. Go to your Google Domains account, and select your Domain, then go to `Email`.
+
+2. Click `Add email alias`
+
+3. If you wish to do `mail@myWebsite.com`, enter `mail` into the first box, and your personal email address (Gmail account) into the second. Click add. 
+
+4. Login to your Gmail account. You should have received a verification email. Open it and follow the instructions. You're almost done.
+
+5. Click on your top-right corner profile icon, then click `Manage your Google Account`. Go to `Security`. 
+
+6. Click `App passwords`
+
+Note: if you don't have 2-Step Verification, you will need to go do that as a prerequisite. If you have it set up already, continue. 
+
+7. In the first drop-down, select `Mail`. In the second, click `Other`. For that you will need to enter your domain (`myAppName.com`).
+
+8. Click `Generate`. 
+
+9. A 16-character password will appear. Copy it, and keep it safe! We'll be using it later. 
+
+10. Go back to your email, and click the cog/settings icon in the top right corner, then `See all settings`, then go to Accounts and Import. 
+
+11. Scroll to `Send mail as:` and click `Add another email address`. 
+
+12. Enter your information:
+
+    a. Name: The name you want people to see
+
+    b. Email address: The same email address you set up from Google Domains. i.e. `mail@myAppName.com`
+
+    (click `Next Step`)
+
+    c. SMTP Server: `smtp.gmail.com`
+
+    d. Port: `465`
+
+    e. Username: the Gmail account you're using right now
+
+    f. Password: The geenrated app password you copied from step 9
+
+13. Click `Add Account`
+
+14. You'll get a new confirmation email. Open it and follow the instructions provided within.
+
+15. Now when you write or respond to emails, in the `from` box you can click the drop-down triangle button, and choose your new email as a source to respond from. 
+
+## You're done! 
 
 
-Google Domains > DNS > Synthetic Records > Add a subdomain: @ to Subdomain, add https://www.[your-domain].com to the next field. Forward the path (so that [your-domain].com/about.html forwards to https://www.[your-domain].com/about.html), and leave the SSL Enabled.
+
+
+Sources: 
+
+Set up webapp (Angular) with Heroku: A lot of sources, Googling. But most of the setup is already done for you in this repository. If you need more information, Google "Host github Angular app on Heroku" or something to that extent, and there are great articles at the ready. 
+
+Point Domain to Heorku app: https://medium.com/@david.gagne/set-up-a-custom-domain-for-your-heroku-application-using-google-domains-guaranteed-a2b2ff934f97
+
+Email alias setup: https://medium.com/builduniversity/how-to-hook-up-a-custom-domain-email-to-your-free-gmail-account-ead660884d11
