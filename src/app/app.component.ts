@@ -87,7 +87,7 @@ export class AppComponent implements OnInit, AfterContentInit {
       element.toggled = false;
     });
   }
-/* Title, will be displayed at top of page. */
+  /* Title, will be displayed at top of page. */
   title = "Clean Card";
 
   displaySwitcher = "experience";
@@ -110,7 +110,7 @@ export class AppComponent implements OnInit, AfterContentInit {
       link: "https://stackoverflow.com/",
     },
   ];
-/* Portfolio. Image (source) is optional.  */
+  /* Portfolio. Image (source) is optional.  */
   portfolio = [
     {
       id: 0,
@@ -135,7 +135,7 @@ export class AppComponent implements OnInit, AfterContentInit {
     "Javascript",
     "CSS",
     "Brushing my teeth",
-    "Water bottle flips"
+    "Water bottle flips",
   ];
 
   tiles = [
@@ -145,13 +145,7 @@ export class AppComponent implements OnInit, AfterContentInit {
       subTitle: "Company Name (1998 - Current)",
       text:
         "Short description of my role and expections in that job. I used these technologies:",
-      list: [
-        "Angular",
-        "HTML",
-        "Javascript",
-        "CSS",
-        "Bunch of others"
-      ],
+      list: ["Angular", "HTML", "Javascript", "CSS", "Bunch of others"],
       big: true,
       toggled: false,
       hide: false,
@@ -234,10 +228,12 @@ export class AppComponent implements OnInit, AfterContentInit {
   ngAfterContentInit(): void {
     let urlIdHash = Number(window.location.href.split("#")[2]);
 
-    setTimeout(() => {
-      let el = document.getElementById(`item-${urlIdHash}`);
-      el.scrollIntoView({ behavior: "smooth", block: "center" });
-    }, 500);
+    if (urlIdHash) {
+      setTimeout(() => {
+        let el = document.getElementById(`item-${urlIdHash}`);
+        el.scrollIntoView({ behavior: "smooth", block: "center" });
+      }, 500);
+    }
   }
   updateUrl() {
     window.history.replaceState(null, null, `#${this.displaySwitcher}`);

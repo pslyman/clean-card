@@ -1,5 +1,5 @@
 # clean-card
-A self help repository to getting your first website up and running. Powered by Angular and Heroku. Example website: porterlyman.com. 
+A self help repository to getting your first website up and running. Powered by Angular and Heroku. My hope is that this will get you started, and you can make it much better than it is now. Example website: porterlyman.com. 
 
 - Contains styling for mobile devices, tablets, and computer screens. 
 - Has URL hashes so you can share your website with certain tabs or experience tiles already open. 
@@ -23,7 +23,7 @@ A self help repository to getting your first website up and running. Powered by 
 2. In `server.js`, replace `CleanCard` with the same as above. 
 3. Next, navigated to `src/index.html`. Replace `Clean Card app` with rather your name, or the name of your app. No need to hyphenate or keep as a single word here. This will be the browser tab title. 
 4. Now, go to `src/app/app.component.ts`. The rest of the work will mostly be in here. 
-5. Scroll down to `title = "Clean Card"` (about line 93 or so) and replace it with the name you chose above. This will be displayed at the top of your page. If you don't want it, you can open `app.component.html` and remove the `<h1>` tag to strip it out (lines 1 -3), or leave `title` empty. 
+5. Scroll down to `title = "Clean Card"` (about line 93 or so) and replace it with the name you chose above. This will be displayed at the top of your page. If you don't want it, you can leave `title` set to empty quotes `title = "";`. 
 6. Starting a few lines down, you'll notice four sets of data: contact, portfolio, skills, and titles. If you do a find all & replace with your IDE, you can probably rename these if needed. If you explore the app you're running in `localhost://4200`, you'll notice they're represented as four tabs. Following the trend in app.component.ts, replace the demo data with your own. You can add as many as you want, separated by commas. 
  
     Note: `tiles` _must_ have incremental `id` with each addition. `big`, `toggled`, and `hide` are required. Leave the latter two as false, and `big` can be true or false depending on if you want that card to be bigger and more prominent. Think if these are your more "notable" experience.
