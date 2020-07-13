@@ -28,11 +28,11 @@ A self help repository to getting your first website up and running. Powered by 
 5. Scroll down to `title = "Clean Card"` (about line 93 or so) and replace it with the name you chose above. This will be displayed at the top of your page. If you don't want it, you can leave `title` set to empty quotes `title = "";`. 
 6. Starting a few lines down, you'll notice four sets of data: contact, portfolio, skills, and titles. If you do a find all & replace with your IDE, you can probably rename these if needed. If you explore the app you're running in `localhost://4200`, you'll notice they're represented as four tabs. Following the trend in app.component.ts, replace the demo data with your own. You can add as many as you want, separated by commas. 
  
-    Note: `tiles` _must_ have incremental `id` with each addition. `big`, `toggled`, and `hide` are required. Leave the latter two as false, and `big` can be true or false depending on if you want that card to be bigger and more prominent. Think if these are your more "notable" experience.
+    **Note**: `tiles` _must_ have incremental `id` with each addition. `big`, `toggled`, and `hide` are required. Leave the latter two as false, and `big` can be true or false depending on if you want that card to be bigger and more prominent. Think if these are your more "notable" experience.
 
-    Note: If you decide you need less than four tabs, you can look through app.component.html and pull out the section you won't need, as well as the `<h4>` item to match it. 
+    **Note**: If you decide you need less than four tabs, you can look through app.component.html and pull out the section you won't need, as well as the `<h4>` item to match it. 
 
-    Note: for images in Portfolio, you can stick them in the assets folder and update the links accordingly. 
+    **Note**: for images in Portfolio, you can stick them in the assets folder and update the links accordingly. 
 
 7. Now `git add .` (note the dot), `git commit -m 'initial commit'`, and `git push` to stage, commit, and push your changes to Github. The `initial commit`, if you make more changes in the future should say something different, usually a short description of what changes you made. For example `git commit -m 'added item to portfolio'`.
 
@@ -61,7 +61,7 @@ A self help repository to getting your first website up and running. Powered by 
 
 2. Buy it. 
 
-Note: It'll take "24 to 72 hours to propagate". Although for me it was a couple of hours.
+    **Note**: It'll take "24 to 72 hours to propagate". Although for me it was a couple of hours.
 
 3. Go to your Heroku account, click your profile avatar, then Account settings. Go to Billing and add a credit card. Unless you get moderate to heavy traffic on your site, you won't be charged. You can keep track of that information on that page.
 
@@ -92,7 +92,7 @@ Note: It'll take "24 to 72 hours to propagate". Although for me it was a couple 
 7. Within a few minutes you should be able to go to your URL from step 5:b and see your website wtihout the `herokupp.com` attached. You're done!
 
 
-Note: If you're looking to use `https` instead of `http`, you'll need to purchase an SSL certificate and integrate it. Unfortunately this is something I'm not very familiar with at the moment, but I'm sure it's <a href="https://nikodunk.com/heroku-ssl-google-domains-2019/">not too difficult to do</a>. When I get a point where I need to do that, I'll update the instructions here. 
+    **Note**: If you're looking to use `https` instead of `http`, you'll need to purchase an SSL certificate and integrate it. Unfortunately this is something I'm not very familiar with at the moment, but I'm sure it's <a href="https://nikodunk.com/heroku-ssl-google-domains-2019/">not too difficult to do</a>. When I get a point where I need to do that, I'll update the instructions here. 
 
 # Set up email alias
 
@@ -110,7 +110,7 @@ If you want to be able to email from your website name, like `mail@myWebsite.com
 
 6. Click `App passwords`
 
-Note: if you don't have 2-Step Verification, you will need to go do that as a prerequisite. If you have it set up already, continue. 
+    **Note**: if you don't have 2-Step Verification, you will need to go do that as a prerequisite. If you have it set up already, continue. 
 
 7. In the first drop-down, select `Mail`. In the second, click `Other`. For that you will need to enter your domain (`myAppName.com`).
 
