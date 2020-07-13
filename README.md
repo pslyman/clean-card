@@ -1,5 +1,6 @@
 # clean-card
-A self help repository to getting your first website up and running. Powered by Angular and Heroku. My hope is that this will get you started, and you can make it much better than it is now. Example website: porterlyman.com. 
+
+A self help repository to getting your first website up and running. Powered by Angular and Heroku. My hope is that this will get you started, and you can make it much better than it is now. Example website: <a href="http://www.porterlyman.com">porterlyman.com</a>. 
 
 - Contains styling for mobile devices, tablets, and computer screens. 
 - Has URL hashes so you can share your website with certain tabs or experience tiles already open. 
@@ -12,6 +13,7 @@ A self help repository to getting your first website up and running. Powered by 
 - Create free Github and Heroku accounts.
 
 # Fork, then clone repo
+
 1. Fork this directory, then clone that fork with the terminal command: `git clone https://github.com/pslyman/clean-card.git` into a directory of your choosing. 
 2. In the destination directory, run `npm install`, then `ng serve`. If the app doesn't open automatically, you can probably find it at the URL `localhost://4200` or a similar port.
 3. Now open your destination directory in your IDE (VSCode). You're now ready to customize your app. 
@@ -69,7 +71,9 @@ Note: It'll take "24 to 72 hours to propagate". Although for me it was a couple 
 
     a. Put `@` as subdomain. 
 
-    b. Put your `https://www.myAppName.com` (or whatever your domain is) to the next field (Destination URL).
+    b. Put your `http://www.myAppName.com` (or whatever your domain is) to the next field (Destination URL).
+    
+    note: use `http`, not `https` here.
 
     c. Click `Add`. 
 
@@ -86,6 +90,9 @@ Note: It'll take "24 to 72 hours to propagate". Although for me it was a couple 
     e. Click `Add`.
 
 7. Within a few minutes you should be able to go to your URL from step 5:b and see your website wtihout the `herokupp.com` attached. You're done!
+
+
+Note: If you're looking to use `https` instead of `http`, you'll need to purchase an SSL certificate and integrate it. Unfortunately this is something I'm not very familiar with at the moment, but I'm sure it's <a href="https://nikodunk.com/heroku-ssl-google-domains-2019/">not too difficult to do</a>. When I get a point where I need to do that, I'll update the instructions here. 
 
 # Set up email alias
 
