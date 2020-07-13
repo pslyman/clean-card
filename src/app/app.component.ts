@@ -87,12 +87,14 @@ export class AppComponent implements OnInit, AfterContentInit {
       element.toggled = false;
     });
   }
-  /* Title, will be displayed at top of page. */
-  title = "Clean Card";
 
   displaySwitcher = "experience";
 
-  /* Make sure to add your actual profile links below. These are just examples. */
+  /* Title, will be displayed at top of page. */
+  title = "Clean Card";
+
+
+  /* Include your actual profile links below. These are just examples. */
   contact = [
     {
       id: 0,
@@ -110,7 +112,8 @@ export class AppComponent implements OnInit, AfterContentInit {
       link: "https://stackoverflow.com/",
     },
   ];
-  /* Portfolio. Image (source) is optional.  */
+
+  /* Portfolio. Image (source) is optional. Link can be left empty ( "" ), but not recommended as it's good to provide links to prove your portfolio.  */
   portfolio = [
     {
       id: 0,
@@ -128,6 +131,7 @@ export class AppComponent implements OnInit, AfterContentInit {
     },
   ];
 
+  /* Nothing special. Just a list of items in quotes, separated by commas. Add as many as you need. */
   skills = [
     "Angular",
     "Typescript",
@@ -278,7 +282,9 @@ export class AppComponent implements OnInit, AfterContentInit {
   }
 
   openLinkUrl(url) {
+    if (url) {
     window.open(url, "_blank");
+    }
   }
 
   jumpToTop() {
