@@ -153,6 +153,8 @@ Sources:
 
 Set up webapp (Angular) with Heroku: A lot of sources, Googling. But most of the setup is already done for you in this repository. If you need more information, Google "Host github Angular app on Heroku" or something to that extent, and there are great articles at the ready. 
 
+Edit: This was intrumental and contains most of what needs to be done. There's some variance in the server.js file, but the rest is correct: https://itnext.io/how-to-deploy-angular-application-to-heroku-1d56e09c5147
+
 Point Domain to Heorku app: https://medium.com/@david.gagne/set-up-a-custom-domain-for-your-heroku-application-using-google-domains-guaranteed-a2b2ff934f97
 
 Email alias setup: https://medium.com/builduniversity/how-to-hook-up-a-custom-domain-email-to-your-free-gmail-account-ead660884d11
