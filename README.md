@@ -3,7 +3,7 @@
 A self help repository to getting your first website up and running. Powered by Angular and Heroku. My hope is that this will get you started, and you can make it much better than it is now. Example website: <a href="http://www.porterlyman.com">porterlyman.com</a>. 
 
 - Contains styling for mobile devices, tablets, and computer screens. 
-- Has URL hashes so you can share your website with certain tabs or experience tiles already open. 
+- Has URL hashes so you can share your website with certain tabs or experience tiles already open (no routing to keep it clean, but you can add that in if you'd like). 
 - Is minimal, no nonsense, to the point. Just how I like it. 
 - Oh and pretty animations. Just how you like it.
 
@@ -92,7 +92,7 @@ A self help repository to getting your first website up and running. Powered by 
 7. Within a few minutes you should be able to go to your URL from step 5:b and see your website wtihout the `herokupp.com` attached. You're done!
 
 
-    **Note**: If you're looking to use `https` instead of `http`, you'll need to purchase an SSL certificate and integrate it. Unfortunately this is something I'm not very familiar with at the moment, but I'm sure it's <a href="https://nikodunk.com/heroku-ssl-google-domains-2019/">not too difficult to do</a>. When I get a point where I need to do that, I'll update the instructions here. 
+    **Note**: If you're looking to use `https` instead of `http`, you'll need to purchase an SSL certificate and integrate it. If you want to use a free SSL certificate, unfortunately there aren't any loopholes to use those and you'll need to upgrade your Heroku account to Hobbyist (as of Oct. 2020, it's $7 a month). If you upgrade, Heroku will get and manage SSL certficiate as part of the upgrade. Either way, you'll probably have to pay. But you got this far for only $12, right? All things considered the price to pay isn't bad, and the benefits of the upgrade are nice. 
 
 # Set up email alias
 
@@ -146,12 +146,14 @@ If you want to be able to email from your website name, like `mail@myWebsite.com
 
 ## You're done! 
 
-
+   **Note about Heroku's free plan**: In order to preserve costs, Heroku's hosting server will fall asleep after 30 minutes. You may notice that the first time you try to visit your hosted site, it could take up to 20 seconds to load. Subsequent loads are immediate until you leave the website alone for a while, at which point it'll have to be visited again to wake it up (another 20 seconds). It's the "price" to pay for paying nothing. If you upgrade your account to Hobbyist (as of Oct. 2020, $7 a month) that problem will be resolved and loading will always be immediate. Plus, Heroku will handle getting you an SSL certficate at that point, as an added benefit. 
 
 
 Sources: 
 
 Set up webapp (Angular) with Heroku: A lot of sources, Googling. But most of the setup is already done for you in this repository. If you need more information, Google "Host github Angular app on Heroku" or something to that extent, and there are great articles at the ready. 
+
+Edit: This was intrumental and contains most of what needs to be done. There's some variance in the server.js file, but the rest is correct: https://itnext.io/how-to-deploy-angular-application-to-heroku-1d56e09c5147
 
 Point Domain to Heorku app: https://medium.com/@david.gagne/set-up-a-custom-domain-for-your-heroku-application-using-google-domains-guaranteed-a2b2ff934f97
 
