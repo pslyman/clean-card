@@ -146,7 +146,7 @@ If you want to be able to email from your website name, like `mail@myWebsite.com
 
 ## You're done! 
 
-    **Note about Heroku's free plan**: In order to preserve costs, Heroku's hosting server will fall asleep after 30 minutes. You may notice that the first time you try to visit your hosted site, it could take up to 20 seconds to load. Subsequent loads are immediate until you leave the website alone for a while, at which point it'll have to be visited again to wake it up (another 20 seconds). It's the "price" to pay for paying nothing. If you upgrade your account to Hobbyist (as of Oct. 2020, $7 a month) that problem will be resolved and loading will always be immediate. Plus, Heroku will handle getting you an SSL certficate at that point, as an added benefit. 
+   **Note about Heroku's free plan**: In order to preserve costs, Heroku's hosting server will fall asleep after 30 minutes. You may notice that the first time you try to visit your hosted site, it could take up to 20 seconds to load. Subsequent loads are immediate until you leave the website alone for a while, at which point it'll have to be visited again to wake it up (another 20 seconds). It's the "price" to pay for paying nothing. If you upgrade your account to Hobbyist (as of Oct. 2020, $7 a month) that problem will be resolved and loading will always be immediate. Plus, Heroku will handle getting you an SSL certficate at that point, as an added benefit. 
 
 
 Sources: 
