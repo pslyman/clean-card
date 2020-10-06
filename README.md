@@ -3,7 +3,7 @@
 A self help repository to getting your first website up and running. Powered by Angular and Heroku. My hope is that this will get you started, and you can make it much better than it is now. Example website: <a href="https://cleancard-example.herokuapp.com/">cleancard-example.herokuapp.com</a>. 
 
 - Contains styling for mobile devices, tablets, and computer screens. 
-- Has URL params so you can share your website with certain tabs or experience tiles already open (no routing to keep it clean, but you can add that in if you'd like). 
+- Has URL params so you can share your website with certain tabs or experience tiles already open (I've added in routing). 
 - Is minimal, no nonsense, to the point. Just how I like it. 
 - Oh and pretty animations. Just how you like it.
 
