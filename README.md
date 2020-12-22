@@ -63,7 +63,17 @@ If you've purchased a domain and would like to use it, you can:
 
 5. Below you'll be given a Type (CNAME), Name (www) and Value (cname.vercel-dns.com). 
 
-6. In another tab, go back to Google Domains, then DNS, then Synthetic Records. Scroll down to `Custom Resource Records`.
+6. In another tab, go back to Google Domains, then DNS, then Synthetic Records. 
+
+    a. Put `@` as subdomain. 
+
+    b. Put your `http://www.myAppName.com` (or whatever your domain is) to the next field (Destination URL).
+    
+    note: use `http`, not `https` here.
+
+    c. Click `Add`. 
+
+7. Scroll down to `Custom Resource Records`.
 
     a. In the first field enter `www`
 
@@ -75,7 +85,7 @@ If you've purchased a domain and would like to use it, you can:
 
     e. Click `Add`.
 
-7. Within a few minutes you should be able to go to your URL from step 5:b and see your website wtihout the `vercel.com` attached. You're done!
+8. Within a few minutes you should be able to go to your URL from step 5:b and see your website wtihout the `vercel.com` attached. You're done!
 
 # Set up email alias
 
