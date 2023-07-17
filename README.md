@@ -1,3 +1,5 @@
+### *This project is deprecated
+
 # clean-card
 
 A self help repository to getting your first website up and running. Powered by Angular and Vercel (or Heroku). My hope is that this will get you started, and you can make it much better than it is now. Example website: <a href="https://www.clean-card.devlay.com/">clean-card.devlay.com</a>. 
